@@ -1,18 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Conheça a Igreja Assembleia de Deus Missão Ministério Chama Pentecostal, fundada em Campina Grande, Paraíba.">
-  <title>Igreja Assembleia de Deus Missão Ministério Chama Pentecostal</title>
-  <style>
-    :root{--navy:#101d31;--blue:#1d3553;--gold:#d8ad60;--cream:#faf7f0;--ink:#243348}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}a{color:inherit}header{background:var(--navy);color:#fff}nav{max-width:1100px;margin:auto;padding:19px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-size:17px;font-weight:700;line-height:1.3;text-decoration:none}.brand span{display:block;font-size:12px;color:var(--gold);letter-spacing:2px;text-transform:uppercase}nav .links{display:flex;gap:22px}nav .links a{text-decoration:none;font-size:14px}nav .links a:hover{color:var(--gold)}.hero{background:linear-gradient(125deg,rgba(16,29,49,.96),rgba(29,53,83,.91)),radial-gradient(circle at 75% 20%,#d8ad60,transparent 45%);color:white;padding:110px 24px 125px;text-align:center}.hero .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:bold}.hero h1{font-family:Georgia,serif;font-size:clamp(35px,5.5vw,66px);max-width:900px;margin:18px auto;line-height:1.16}.hero p{max-width:630px;margin:0 auto 30px;color:#e4e8ed;font-size:18px}.button{display:inline-block;background:var(--gold);color:var(--navy);text-decoration:none;padding:13px 26px;border-radius:5px;font-weight:bold}.button:hover{background:#e8c588}main section{max-width:1100px;margin:auto;padding:76px 24px}.section-label{color:#94703b;font-weight:bold;text-transform:uppercase;letter-spacing:2px;font-size:12px}h2{font-family:Georgia,serif;font-size:clamp(28px,4vw,40px);color:var(--navy);line-height:1.25;margin:10px 0 20px}.intro{max-width:760px;font-size:17px}.details{background:white;border:1px solid #e9e3d8;border-radius:12px;padding:30px;box-shadow:0 12px 35px rgba(16,29,49,.05)}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 35px}.detail{border-bottom:1px solid #eee9e0;padding-bottom:15px;overflow-wrap:anywhere}.detail small{display:block;text-transform:uppercase;letter-spacing:1px;font-size:11px;font-weight:bold;color:#667185}.detail strong{font-size:16px;color:var(--navy)}.active{display:inline-block;color:#166534;background:#dcfce7;padding:3px 12px;border-radius:20px;font-size:13px}footer{background:var(--navy);color:#d9e0e8;text-align:center;padding:35px 24px;font-size:13px}footer strong{color:white}@media(max-width:650px){nav{align-items:flex-start;flex-direction:column}nav .links{gap:18px}.hero{padding:75px 20px 90px}.detail-grid{grid-template-columns:1fr}main section{padding:55px 20px}.details{padding:22px}}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Central de Atendimento</title>
+
+<style>
+:root{
+  --primary:#16b45f;
+  --primary2:#0f9b4c;
+  --text:#0f172a;
+  --muted:#6b7280;
+  --shadow:0 18px 50px rgba(2,6,23,.18);
+}
+
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,#f0fdf4,#ffffff);
+  color:var(--text);
+}
+
+.container{max-width:1100px;margin:auto;padding:40px 20px}
+
+.header{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+
+.logo{
+  width:46px;height:46px;border-radius:14px;
+  background:#fff;border:1px solid rgba(0,0,0,.1);
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  object-fit:contain;
+}
+
+.header h1{margin:0;font-size:22px}
+.header span{font-size:13px;color:var(--muted)}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+
+.hero h2{font-size:34px;margin:0}
+.hero p{margin-top:12px;line-height:1.5;color:rgba(0,0,0,.7)}
+
+.btn{
+  display:inline-block;
+  margin-top:18px;
+  padding:14px 24px;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--primary2),var(--primary));
+  color:#fff;
+  font-weight:800;
+  text-decoration:none;
+  box-shadow:0 18px 40px rgba(22,180,95,.35);
+}
+
+.card{
+  background:#fff;
+  padding:18px;
+  border-radius:22px;
+  box-shadow:var(--shadow);
+}
+
+.service{
+  display:block;
+  padding:14px;
+  margin-bottom:10px;
+  border-radius:16px;
+  background:rgba(22,180,95,.08);
+  border:1px solid rgba(22,180,95,.18);
+  font-weight:800;
+  text-decoration:none;
+  color:var(--text);
+}
+
+.service:hover{
+  background:rgba(22,180,95,.12);
+}
+
+.service span{
+  float:right;
+  color:var(--primary2);
+}
+
+.split{
+  margin-top:80px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  align-items:center;
+}
+
+.split h3{font-size:28px;margin:0}
+.split h4{margin-top:10px;font-size:18px}
+.split p{margin-top:10px;line-height:1.6;color:var(--muted)}
+
+.image{
+  height:320px;
+  border-radius:22px;
+  background:url("https://i.imgur.com/Prh9fyG.png") center/cover no-repeat;
+  box-shadow:var(--shadow);
+}
+
+.values{
+  margin-top:90px;
+  background:#0b1220;
+  color:#fff;
+  padding:60px 20px;
+}
+
+.values h3{text-align:center;font-size:28px;margin:0}
+
+.grid{
+  max-width:1100px;
+  margin:40px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.box{
+  background:rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:20px;
+}
+
+.box strong{font-size:18px}
+.box p{margin-top:10px;color:rgba(255,255,255,.75);line-height:1.6}
+
+footer{
+  background:#fff;
+  border-top:1px solid rgba(0,0,0,.08);
+  padding:20px 0;
+  text-align:center;
+  color:#6b7280;
+}
+
+@media(max-width:900px){
+  .hero,.split,.grid{grid-template-columns:1fr}
+  .hero h2{font-size:28px}
+}
+</style>
 </head>
+
 <body>
-<header><nav aria-label="Navegação principal"><a class="brand" href="#inicio">Assembleia de Deus<span>Missão Ministério Chama Pentecostal</span></a><div class="links"><a href="#inicio">Início</a><a href="#sobre">Sobre nós</a><a href="#dados">Dados cadastrais</a></div></nav></header>
-<div class="hero" id="inicio"><div class="eyebrow">Bem-vindo à nossa página</div><h1>Igreja Assembleia de Deus Missão Ministério Chama Pentecostal</h1><p>Conheça nossa instituição religiosa, sua história e suas informações institucionais.</p><a class="button" href="#sobre">Conheça a igreja</a></div>
-<main><section id="sobre"><div class="section-label">Nossa história</div><h2>Sobre a igreja</h2><p class="intro">A Igreja Assembleia de Deus Missão Ministério Chama Pentecostal foi fundada em <strong>29 de dezembro de 2015</strong>, na cidade de <strong>Campina Grande, Paraíba</strong>. Sua atividade principal cadastrada é a de organizações religiosas ou filosóficas.</p></section><section id="dados"><div class="section-label">Transparência institucional</div><h2>Informações cadastrais</h2><div class="details"><div class="detail-grid"><div class="detail"><small>Razão social</small><strong>Igreja Assembleia de Deus Missão Ministério Chama Pentecostal</strong></div><div class="detail"><small>CNPJ</small><strong>24.060.098/0001-30</strong></div><div class="detail"><small>Data de fundação</small><strong>29/12/2015</strong></div><div class="detail"><small>Localidade</small><strong>Campina Grande – PB</strong></div><div class="detail"><small>Atividade principal (CNAE)</small><strong>94.91-0-00 — Atividades de organizações religiosas ou filosóficas</strong></div><div class="detail"><small>Situação cadastral informada</small><strong class="active">Ativa</strong></div></div></div><p style="font-size:13px;color:#667185;margin-top:18px">Informações institucionais fornecidas para esta página. A situação cadastral pode ser consultada nos canais oficiais da Receita Federal.</p></section></main>
-<footer><strong>Igreja Assembleia de Deus Missão Ministério Chama Pentecostal</strong><br>CNPJ 24.060.098/0001-30 · Campina Grande – PB<br><span id="year"></span> · Informações institucionais</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+
+<script>
+  const WHATSAPP_ATENDIMENTO = "5516982222775";
+  const WHATSAPP_2VIA       = "5516982222775";
+  const WHATSAPP_SUPORTE    = "5516982222775";
+  const WHATSAPP_OUTROS     = "5516982222775";
+</script>
+
+<div class="container">
+  <div class="header">
+    <img src="https://i.imgur.com/uis75U0.jpeg" class="logo" alt="Logo">
+    <div>
+      <h1>Central de Atendimento</h1>
+      <span>Serviços e suporte via WhatsApp</span>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div>
+      <h2>Solicite Atendimento</h2>
+      <p>Selecione o serviço desejado e inicie o atendimento seguro pelo WhatsApp.</p>
+
+      <a class="btn" id="btnAtendimento" href="#">
+        Iniciar Atendimento Seguro
+      </a>
+    </div>
+
+    <div class="card">
+      <a class="service" id="svc2Via" href="#">
+        2ª Via de Boleto <span>Acessar</span>
+      </a>
+
+      <a class="service" id="svcSuporte" href="#">
+        Suporte Técnico <span>Acessar</span>
+      </a>
+
+      <a class="service" id="svcOutros" href="#">
+        Outros Assuntos <span>Acessar</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="split">
+    <div>
+      <h3>Soluções na palma<br>da sua mão</h3>
+      <h4>Facilite seu atendimento</h4>
+
+      <p>Tenha um fluxo simples, rápido e seguro para solicitar suporte e serviços.</p>
+
+      <p>
+        Nós acreditamos que um bom atendimento consiste em oferecer processos simples e seguros,
+        que tornem o dia a dia do cliente mais fácil.
+      </p>
+    </div>
+
+    <div class="image"></div>
+  </div>
+</div>
+
+<div class="values">
+  <h3>Compromissos</h3>
+  <div class="grid">
+    <div class="box"><strong>01 ✓ Transparência</strong><p>Nosso compromisso com a transparência cria confiança.</p></div>
+    <div class="box"><strong>02 ✓ Seriedade</strong><p>Relações sólidas baseadas em integridade.</p></div>
+    <div class="box"><strong>03 ✓ Ética</strong><p>Atuação ética e responsável.</p></div>
+  </div>
+</div>
+
+<footer>
+©️ <span id="y"></span> Central de Atendimento • Todos os direitos reservados
+</footer>
+
+<script>
+  function waLink(numero, servico){
+    const msg = "Olá! Preciso de atendimento sobre: " + servico;
+    return "https://wa.me/" + numero + "?text=" + encodeURIComponent(msg);
+  }
+
+  document.getElementById("btnAtendimento").href = "https://wa.me/" + WHATSAPP_ATENDIMENTO;
+
+  document.getElementById("svc2Via").href    = waLink(WHATSAPP_2VIA, "2ª Via");
+  document.getElementById("svcSuporte").href = waLink(WHATSAPP_SUPORTE, "Suporte Técnico");
+  document.getElementById("svcOutros").href  = waLink(WHATSAPP_OUTROS, "Outros Assuntos");
+
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
